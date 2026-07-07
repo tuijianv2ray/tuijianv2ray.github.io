@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://tuijianv2ray.github.io/news/article-266925.htm" />
+    <title>V2Ray一键安装全流程指南：从零起步到部署上线的实战教程</title>
+        <meta name="description" content="在信息流动越发受限的今天，拥有一套稳定、安全、高效的代理系统几乎成了互联网“重度用户”的刚需。作为新一代代理核心工具，V2Ray 不仅具备极高的安全性与隐私性，更因其多协议、多传输、多端口的灵活架构，" />
+        <link rel="icon" href="/assets/website/img/macclash/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="推荐V2ray 订阅官方网站">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://tuijianv2ray.github.io/news/article-266925.htm" />
+    <meta property="og:site_name" content="推荐V2ray 订阅官方网站" />
+    <meta property="og:title" content="V2Ray一键安装全流程指南：从零起步到部署上线的实战教程" />
+    <meta property="og:image" content="https://tuijianv2ray.github.io/uploads/20240926/9a4466eaeff5438ccd14b13ca1b03991.webp" />
+        <meta property="og:release_date" content="2026-07-03T11:21:46" />
+    <meta property="og:updated_time" content="2026-07-03T11:21:46" />
+        <meta property="og:description" content="在信息流动越发受限的今天，拥有一套稳定、安全、高效的代理系统几乎成了互联网“重度用户”的刚需。作为新一代代理核心工具，V2Ray 不仅具备极高的安全性与隐私性，更因其多协议、多传输、多端口的灵活架构，" />
+        
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="V2Ray一键安装全流程指南：从零起步到部署上线的实战教程">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    
+    <link rel="stylesheet" href="/assets/website/css/macclash/style.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/jquery-ui.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/flaticon.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/aos.css">
+    <link rel="stylesheet" href="/assets/website/css/macclash/style1.css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5QF67XQCNY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5QF67XQCNY');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        
+    <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icon-close2 js-menu-toggle"></span>
+            </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+    </div>
+    <header class="site-navbar py-3 js-site-navbar site-navbar-target" role="banner" id="site-navbar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 site-logo">
+                    <a href="/" class="text-white h2 mb-0">
+                                        <span class="mb-0">推荐V2ray</span>
+                                        </a>
+                </div>
+                <div class="col-md-8 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+                        <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+                                                        <li><a href="/" class="nav-link">首页</a></li>
+                                                        <li><a href="/paid-subscribe/" class="nav-link">推荐机场</a></li>
+                                                        <li><a href="/news/" class="nav-link">新闻资讯</a></li>
+                                                        <li><a href="/client.htm" class="nav-link">客户端</a></li>
+                                                    </ul>
+                    </nav>
+                </div>
+                <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+            </div>
+        </div>
+    </header>
+    <div class="site-blocks-cover overlay" style="background-image: url(/assets/website/img/macclash/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5" id="section-home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center text-center">
+                <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+                    <h1 class="text-white font-weight-light text-uppercase font-weight-bold">
+                        V2Ray一键安装全流程指南：从零起步到部署上线的实战教程                    </h1>
+                    <p class="mb-5">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-section" id="section-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="hidden" id="share-website-info" data-name="Clash Github官方机场站" data-url="https://clashgithub.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+    
+<p data-start="33" data-end="168" class="">在信息流动越发受限的今天，拥有一套稳定、安全、高效的代理系统几乎成了互联网“重度用户”的刚需。作为新一代代理核心工具，<strong data-start="92" data-end="101">V2Ray</strong> 不仅具备极高的安全性与隐私性，更因其多协议、多传输、多端口的灵活架构，成为科学上网、数据加密、分流控制等场景中的“王者级”解决方案。</p>
+<p data-start="170" data-end="286" class="">然而，对于不少技术小白或刚接触 Linux 的用户来说，复杂的配置过程可能是最大门槛。幸运的是，借助社区开发者提供的“一键搭建脚本”，你只需要几条命令，就可以轻松完成 V2Ray 的部署与基本配置，真正实现“一行代码，五分钟见效”。</p>
+<p data-start="288" data-end="351" class="">本文将以详尽的步骤和实战经验，为你呈现一篇<strong data-start="309" data-end="319">从入门到上线</strong>的 V2Ray 一键搭建教程，帮助你快速构建属于自己的代理服务。</p>
+<hr data-start="353" data-end="356" class="" style="">
+<h2 data-start="358" data-end="381" class="">一、V2Ray 是什么？为什么值得选择？</h2>
+<p data-start="383" data-end="582" class=""><strong data-start="383" data-end="392">V2Ray</strong> 是一个基于 Golang 编写的开源代理工具，隶属于 Project V 项目。它不仅支持多种代理协议（如 VMess、VLESS、Socks、HTTP、Trojan 等），还内置强大的流量分流、自定义路由、TLS 加密、WebSocket 混淆等功能。对比传统代理工具（如 Shadowsocks），V2Ray 更加灵活、隐蔽、适应性强，尤其在国内复杂网络环境中表现尤为突出。</p>
+<p data-start="584" data-end="602" class=""><strong data-start="584" data-end="602">V2Ray 的核心优势包括：</strong></p>
+<ul data-start="603" data-end="691">
+<li data-start="603" data-end="617" class="" style="">
+<p data-start="605" data-end="617" class="">多协议支持，兼容性极强；</p>
+</li>
+<li data-start="618" data-end="635" class="" style="">
+<p data-start="620" data-end="635" class="">高度可定制，满足高级用户需求；</p>
+</li>
+<li data-start="636" data-end="655" class="" style="">
+<p data-start="638" data-end="655" class="">支持透明代理、负载均衡和链式转发；</p>
+</li>
+<li data-start="656" data-end="673" class="" style="">
+<p data-start="658" data-end="673" class="">日志系统完善，便于监控和调试；</p>
+</li>
+<li data-start="674" data-end="691" class="" style="">
+<p data-start="676" data-end="691" class="">社区活跃，脚本与面板工具丰富。</p>
+</li>
+</ul>
+<hr data-start="693" data-end="696" class="" style="">
+<h2 data-start="698" data-end="719" class="">二、一键脚本搭建 V2Ray 的优势</h2>
+<p data-start="721" data-end="799" class="">手动安装 V2Ray 涉及下载安装、权限配置、JSON 编写等繁琐步骤，而“一键脚本”通过自动化方式解决了大部分技术门槛，让任何人都可以在几分钟内完成部署。</p>
+<p data-start="801" data-end="828" class=""><strong data-start="801" data-end="828">使用一键脚本搭建 V2Ray，有以下显著优势：</strong></p>
+<ul data-start="830" data-end="983">
+<li data-start="830" data-end="860" class="" style="">
+<p data-start="832" data-end="860" class="">✅ <strong data-start="834" data-end="842">全自动化</strong>：下载安装、配置、服务管理一步到位；</p>
+</li>
+<li data-start="861" data-end="886" class="" style="">
+<p data-start="863" data-end="886" class="">✅ <strong data-start="865" data-end="873">快速部署</strong>：最快不到五分钟即可完成；</p>
+</li>
+<li data-start="887" data-end="918" class="" style="">
+<p data-start="889" data-end="918" class="">✅ <strong data-start="891" data-end="901">参数引导清晰</strong>：操作过程中有中文提示，不怕选错；</p>
+</li>
+<li data-start="919" data-end="949" class="" style="">
+<p data-start="921" data-end="949" class="">✅ <strong data-start="923" data-end="934">支持更新与卸载</strong>：维护简单，不依赖图形化界面；</p>
+</li>
+<li data-start="950" data-end="983" class="" style="">
+<p data-start="952" data-end="983" class="">✅ <strong data-start="954" data-end="962">源码可见</strong>：公开透明，可自由查看脚本内容保证安全性。</p>
+</li>
+</ul>
+<hr data-start="985" data-end="988" class="" style="">
+<h2 data-start="990" data-end="1003" class="">三、搭建前的准备工作</h2>
+<p data-start="1005" data-end="1024" class="">正式部署前，请确保以下准备条件已完成：</p>
+<h3 data-start="1026" data-end="1035" class="">必备条件：</h3>
+<ol data-start="1037" data-end="1225">
+<li data-start="1037" data-end="1116" class="" style="">
+<p data-start="1040" data-end="1067" class=""><strong data-start="1040" data-end="1065">一台可联网的服务器（推荐使用国外 VPS）</strong></p>
+<ul data-start="1071" data-end="1116">
+<li data-start="1071" data-end="1116" class="" style="">
+<p data-start="1073" data-end="1116" class="">推荐系统：Ubuntu 20.04 或 Debian 11，内存建议 ≥ 512MB；</p>
+</li>
+</ul>
+</li>
+<li data-start="1117" data-end="1160" class="" style="">
+<p data-start="1120" data-end="1160" class=""><strong data-start="1120" data-end="1160">远程连接工具（如 PuTTY、Termius、Linux/Mac 终端）</strong></p>
+</li>
+<li data-start="1161" data-end="1186" class="" style="">
+<p data-start="1164" data-end="1186" class=""><strong data-start="1164" data-end="1186">Root 权限访问或 sudo 权限</strong></p>
+</li>
+<li data-start="1187" data-end="1225" class="" style="">
+<p data-start="1190" data-end="1225" class=""><strong data-start="1190" data-end="1200">域名（可选）</strong>：部分传输协议（如 TLS + WS）推荐绑定域名</p>
+</li>
+</ol>
+<hr data-start="1227" data-end="1230" class="" style="">
+<h2 data-start="1232" data-end="1250" class="">四、V2Ray一键搭建实战步骤</h2>
+<h3 data-start="1252" data-end="1267" class="">第一步：连接你的服务器</h3>
+<p data-start="1269" data-end="1283" class="">使用 SSH 登录 VPS：</p>
+<pre class="overflow-visible!" data-start="1285" data-end="1320"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>ssh root@your_server_ip
+</span></span></code></div></div></pre>
+<p data-start="1322" data-end="1351" class="">如果是 Ubuntu 系统，可能需要使用 sudo 权限：</p>
+<pre class="overflow-visible!" data-start="1353" data-end="1372"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>sudo -i
+</span></span></code></div></div></pre>
+<h3 data-start="1374" data-end="1389" class="">第二步：更新服务器系统</h3>
+<p data-start="1391" data-end="1408" class="">确保系统是最新状态，避免依赖冲突：</p>
+<pre class="overflow-visible!" data-start="1410" data-end="1470"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>apt update &amp;&amp; apt upgrade -y   </span><span><span class="hljs-comment"># Debian / Ubuntu</span></span><span>
+</span></span></code></div></div></pre>
+<p data-start="1472" data-end="1476" class="">或使用：</p>
+<pre class="overflow-visible!" data-start="1478" data-end="1521"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>yum update -y   </span><span><span class="hljs-comment"># CentOS / RHEL</span></span><span>
+</span></span></code></div></div></pre>
+<h3 data-start="1523" data-end="1539" class="">第三步：下载一键安装脚本</h3>
+<p data-start="1541" data-end="1599" class="">目前较常用的一键脚本是来自<strong data-start="1554" data-end="1564">233boy</strong> 和 <strong data-start="1567" data-end="1579">v2fly 社区</strong>维护的版本，这里以 233boy 为例：</p>
+<pre class="overflow-visible!" data-start="1601" data-end="1713"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>bash &lt;(curl -Ls https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+</span></span></code></div></div></pre>
+<p data-start="1715" data-end="1726" class="">或者使用经典社区脚本：</p>
+<pre class="overflow-visible!" data-start="1728" data-end="1782"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>bash &lt;(curl -s -L https://git.io/v2ray.sh)
+</span></span></code></div></div></pre>
+<p data-start="1784" data-end="1829" class="">系统会自动下载并安装 V2Ray 最新版本，并提示你选择协议、端口、UUID、加密方式等。</p>
+<h3 data-start="1831" data-end="1847" class="">第四步：根据引导配置参数</h3>
+<p data-start="1849" data-end="1859" class="">脚本会出现以下交互：</p>
+<ul data-start="1861" data-end="2014">
+<li data-start="1861" data-end="1897" class="" style="">
+<p data-start="1863" data-end="1897" class="">输入要使用的协议类型（建议使用 <strong data-start="1879" data-end="1896">VMess 或 VLESS</strong>）</p>
+</li>
+<li data-start="1898" data-end="1925" class="" style="">
+<p data-start="1900" data-end="1925" class="">设置端口（默认为 443/10086，建议自定义）</p>
+</li>
+<li data-start="1926" data-end="1949" class="" style="">
+<p data-start="1928" data-end="1949" class="">是否开启 TLS（推荐开启并使用自有域名）</p>
+</li>
+<li data-start="1950" data-end="1990" class="" style="">
+<p data-start="1952" data-end="1990" class="">是否启用 WebSocket + CDN（配合 Cloudflare 使用）</p>
+</li>
+<li data-start="1991" data-end="2014" class="" style="">
+<p data-start="1993" data-end="2014" class="">自动生成 UUID，或使用自定义 UUID</p>
+</li>
+</ul>
+<p data-start="2016" data-end="2046" class="">完成选择后，脚本将自动生成配置文件并启动 V2Ray 服务。</p>
+<hr data-start="2048" data-end="2051" class="" style="">
+<h2 data-start="2053" data-end="2072" class="">五、配置与维护 V2Ray 服务</h2>
+<h3 data-start="2074" data-end="2087" class="">查看配置文件位置：</h3>
+<p data-start="2089" data-end="2150" class="">配置文件一般位于 <code data-start="2098" data-end="2132">/usr/local/etc/v2ray/config.json</code><br data-start="2132" data-end="2135">
+可用文本编辑器进行查看与修改：</p>
+<pre class="overflow-visible!" data-start="2152" data-end="2199"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>vi /usr/local/etc/v2ray/config.json
+</span></span></code></div></div></pre>
+<h3 data-start="2201" data-end="2218" class="">启动/重启/查看服务状态：</h3>
+<pre class="overflow-visible!" data-start="2220" data-end="2321"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl start v2ray
+systemctl stop v2ray
+systemctl restart v2ray
+systemctl status v2ray
+</span></span></code></div></div></pre>
+<h3 data-start="2323" data-end="2334" class="">设置开机启动：</h3>
+<pre class="overflow-visible!" data-start="2336" data-end="2370"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>systemctl </span><span><span class="hljs-built_in">enable</span></span><span> v2ray
+</span></span></code></div></div></pre>
+<hr data-start="2372" data-end="2375" class="" style="">
+<h2 data-start="2377" data-end="2393" class="">六、如何获取你的连接信息？</h2>
+<p data-start="2395" data-end="2418" class="">脚本安装完成后会在终端输出你的连接参数，包括：</p>
+<ul data-start="2420" data-end="2486">
+<li data-start="2420" data-end="2441" class="" style="">
+<p data-start="2422" data-end="2441" class="">协议类型（VMess / VLESS）</p>
+</li>
+<li data-start="2442" data-end="2448" class="" style="">
+<p data-start="2444" data-end="2448" class="">UUID</p>
+</li>
+<li data-start="2449" data-end="2456" class="" style="">
+<p data-start="2451" data-end="2456" class="">地址与端口</p>
+</li>
+<li data-start="2457" data-end="2463" class="" style="">
+<p data-start="2459" data-end="2463" class="">加密方式</p>
+</li>
+<li data-start="2464" data-end="2477" class="" style="">
+<p data-start="2466" data-end="2477" class="">路径（如开启了 WS）</p>
+</li>
+<li data-start="2478" data-end="2486" class="" style="">
+<p data-start="2480" data-end="2486" class="">TLS 状态</p>
+</li>
+</ul>
+<p data-start="2488" data-end="2570" class="">你可以将这些信息导入到 <strong data-start="2500" data-end="2519">V2RayN（Windows）</strong>、<strong data-start="2520" data-end="2541">Shadowrocket（iOS）</strong>、<strong data-start="2542" data-end="2562">v2rayNG（Android）</strong> 等客户端使用。</p>
+<hr data-start="2572" data-end="2575" class="" style="">
+<h2 data-start="2577" data-end="2601" class="">七、V2Ray常见问题与排查技巧（FAQ）</h2>
+<h3 data-start="2603" data-end="2622" class="">Q1：服务部署完成后无法连接？</h3>
+<ul data-start="2624" data-end="2754">
+<li data-start="2624" data-end="2638" class="" style="">
+<p data-start="2626" data-end="2638" class="">检查防火墙是否放行端口；</p>
+</li>
+<li data-start="2639" data-end="2675" class="" style="">
+<p data-start="2641" data-end="2675" class="">检查是否正确选择了加密协议（VMess 和 VLESS 不可混用）；</p>
+</li>
+<li data-start="2676" data-end="2723" class="" style="">
+<p data-start="2678" data-end="2723" class="">检查配置文件 JSON 格式是否正确（使用 <code data-start="2700" data-end="2718">jq . config.json</code> 验证）；</p>
+</li>
+<li data-start="2724" data-end="2754" class="" style="">
+<p data-start="2726" data-end="2754" class="">如果启用 TLS，确保域名已经解析生效，并成功签发证书。</p>
+</li>
+</ul>
+<h3 data-start="2756" data-end="2774" class="">Q2：如何更新 V2Ray？</h3>
+<p data-start="2776" data-end="2791" class="">可使用一键脚本自带的更新命令：</p>
+<pre class="overflow-visible!" data-start="2793" data-end="2827"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]">bash</div><div class="sticky top-9"><div class="absolute right-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"><button class="flex gap-1 items-center select-none px-4 py-1" aria-label="复制"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>复制</button></span><span class="" data-state="closed"><button class="flex items-center gap-1 px-4 py-1 select-none"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-xs"><path d="M2.5 5.5C4.3 5.2 5.2 4 5.5 2.5C5.8 4 6.7 5.2 8.5 5.5C6.7 5.8 5.8 7 5.5 8.5C5.2 7 4.3 5.8 2.5 5.5Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.66282 16.5231L5.18413 19.3952C5.12203 19.7678 5.09098 19.9541 5.14876 20.0888C5.19933 20.2067 5.29328 20.3007 5.41118 20.3512C5.54589 20.409 5.73218 20.378 6.10476 20.3159L8.97693 19.8372C9.72813 19.712 10.1037 19.6494 10.4542 19.521C10.7652 19.407 11.0608 19.2549 11.3343 19.068C11.6425 18.8575 11.9118 18.5882 12.4503 18.0497L20 10.5C21.3807 9.11929 21.3807 6.88071 20 5.5C18.6193 4.11929 16.3807 4.11929 15 5.5L7.45026 13.0497C6.91175 13.5882 6.6425 13.8575 6.43197 14.1657C6.24513 14.4392 6.09299 14.7348 5.97903 15.0458C5.85062 15.3963 5.78802 15.7719 5.66282 16.5231Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5 7L18.5 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>编辑</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>bash v2ray.sh --update
+</span></span></code></div></div></pre>
+<p data-start="2829" data-end="2844" class="">或者重新运行脚本进行覆盖安装。</p>
+<h3 data-start="2846" data-end="2862" class="">Q3：如何添加多个用户？</h3>
+<p data-start="2864" data-end="2922" class="">编辑配置文件，在 <code data-start="2873" data-end="2883">inbounds</code> 和 <code data-start="2886" data-end="2897">outbounds</code> 中分别添加用户 UUID 信息，并重启服务即可。</p>
+<h3 data-start="2924" data-end="2957" class="">Q4：如何绑定 Cloudflare 实现 CDN 加速？</h3>
+<ul data-start="2959" data-end="3046">
+<li data-start="2959" data-end="2977" class="" style="">
+<p data-start="2961" data-end="2977" class="">配置 WebSocket 模式；</p>
+</li>
+<li data-start="2978" data-end="2995" class="" style="">
+<p data-start="2980" data-end="2995" class="">设置路径（如 <code data-start="2987" data-end="2993">/ray</code>）；</p>
+</li>
+<li data-start="2996" data-end="3014" class="" style="">
+<p data-start="2998" data-end="3014" class="">使用 Nginx 配置伪装网站；</p>
+</li>
+<li data-start="3015" data-end="3046" class="" style="">
+<p data-start="3017" data-end="3046" class="">将域名解析至 Cloudflare，再设置 CDN 代理。</p>
+</li>
+</ul>
+<hr data-start="3048" data-end="3051" class="" style="">
+<h2 data-start="3053" data-end="3064" class="">八、进阶操作建议</h2>
+<ul data-start="3066" data-end="3242">
+<li data-start="3066" data-end="3101" class="" style="">
+<p data-start="3068" data-end="3101" class="">配合 <strong data-start="3071" data-end="3086">Nginx + TLS</strong> 实现强伪装，提升抗封锁能力；</p>
+</li>
+<li data-start="3102" data-end="3124" class="" style="">
+<p data-start="3104" data-end="3124" class="">使用 <strong data-start="3107" data-end="3117">定时重启脚本</strong> 保持稳定性；</p>
+</li>
+<li data-start="3125" data-end="3165" class="" style="">
+<p data-start="3127" data-end="3165" class="">部署 <strong data-start="3130" data-end="3140">流量监控工具</strong>（如 vnstat、netdata）跟踪使用情况；</p>
+</li>
+<li data-start="3166" data-end="3208" class="" style="">
+<p data-start="3168" data-end="3208" class="">搭配 <strong data-start="3171" data-end="3199">自建 DNS（SmartDNS、dnsmasq）</strong> 提高连接智能化；</p>
+</li>
+<li data-start="3209" data-end="3242" class="" style="">
+<p data-start="3211" data-end="3242" class="">将配置导入面板（如 V2Board、X-UI）实现多用户管理。</p>
+</li>
+</ul>
+<hr data-start="3244" data-end="3247" class="" style="">
+<h2 data-start="3249" data-end="3278" class="">九、结语：从“命令行小白”到“代理自由人”的进阶之路</h2>
+<p data-start="3280" data-end="3348" class="">通过一键搭建脚本，V2Ray 的安装过程从一连串复杂指令，简化为数次回车确认。它不再是技术宅的专属利器，而是任何人都可以掌握的隐私防线。</p>
+<p data-start="3350" data-end="3473" class="">本文不仅手把手地带你完成从部署到配置的全过程，还介绍了优化建议与进阶使用技巧，让你在使用 V2Ray 的路上少踩坑、早上手。未来无论是工作中访问受限资源、在海外安全回国，还是日常刷流媒体时追求更高质量体验，V2Ray 都将是你网络自由的重要伙伴。</p>
+<hr data-start="3475" data-end="3478" class="" style="">
+<h3 data-start="3480" data-end="3487" class="">点评：</h3>
+<p data-start="3489" data-end="3647" class="">这篇文章堪称“一键部署 V2Ray”领域的全能教程，融合了实操性、技术深度与易读性。写作逻辑清晰，从入门动机到详细步骤再到高级用法，层层递进、丝丝入扣。语言风格专业又不失亲切，技术解说中穿插实战经验，尤其适合初学者入门，也为有经验者提供了进阶灵感。更值得一提的是，FAQ 部分直击用户痛点，极大提升了文章的实用价值。</p>
+<p data-start="3649" data-end="3682" class="">一句话点评：<strong data-start="3655" data-end="3682" data-is-last-node="">“简化的不只是流程，更是通向网络自由的路径。”</strong></p></div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-266488.htm">守护数字原住民：家长如何构建儿童安全上网的"防火墙"</a></p>
+        <p>下一个：<a href="/news/article-267361.htm">科学上网的困境与突围：为何被封？如何应对？</a></p>
+    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default box right-ad-box">
+    <div class="panel-heading">
+        <h3 class="panel-title">特别推荐</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="text-center">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">
+                    <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
+                </a>
+                <dl>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></dt>
+                    <dd>
+                        <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-249926.htm" title="Linux系统启用BBR">Linux系统启用BBR</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-252039.htm" title="从零到精通：全面解析Clash配置失败的排查与解决方案">从零到精通：全面解析Clash配置失败的排查与解决方案</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-259330.htm" title="突破网络限制：iPad用户获取Shadowrocket的终极指南">突破网络限制：iPad用户获取Shadowrocket的终极指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-260857.htm" title="苹果设备科学上网全攻略：从零开始掌握Clash配置与优化">苹果设备科学上网全攻略：从零开始掌握Clash配置与优化</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-246127.htm" title="深度剖析V2Ray与IPsec：两个世界的隐私守护者">深度剖析V2Ray与IPsec：两个世界的隐私守护者</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-262143.htm" title="从零开始掌握V2Ray安卓客户端：全方位科学上网指南">从零开始掌握V2Ray安卓客户端：全方位科学上网指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-265625.htm" title="科学上网闪退问题深度解析与解决方案">科学上网闪退问题深度解析与解决方案</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-249084.htm" title="全面解析：电脑无法使用Clash的十大原因及终极解决方案">全面解析：电脑无法使用Clash的十大原因及终极解决方案</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-255482.htm" title="360路由器解锁全球网络：科学上网全攻略与深度解析">360路由器解锁全球网络：科学上网全攻略与深度解析</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-256750.htm" title="探索Shadowrocket 飞飞：从下载到精通的全方位指南">探索Shadowrocket 飞飞：从下载到精通的全方位指南</a><hr /></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">7</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">30</span> <a href="/date/2026-06/" title="2026-06 归档">2026-06</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer class="site-footer">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="pt-5">
+                                            <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=" data-type="Xingchen" data-code="register&code" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                            <p>
+                            <a href="/">推荐V2ray 订阅官方网站</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- </div> -->
+    <script src="/assets/website/js/frontend/macclash/jquery-3.3.1.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery-migrate-3.0.1.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery-ui.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery.easing.1.3.js"></script>
+    <script src="/assets/website/js/frontend/macclash/popper.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/bootstrap.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/owl.carousel.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery.stellar.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery.countdown.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/website/js/frontend/macclash/aos.js"></script>
+    <script src="/assets/website/js/frontend/macclash/main.js"></script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
