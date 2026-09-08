@@ -303,24 +303,9 @@ A：检查服务器状态、防火墙设置、端口是否正确，及账户权�
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
+    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
     <div class="panel-body">
-        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Shadowrocket 的自动切换功能如何配置？</h5></div>
-    <div class="panel-body">
-        Shadowrocket 支持根据策略组和节点延迟自动切换最优节点。用户可设置测速频率和延迟阈值，程序会定期测试节点并自动切换，以保证网络稳定性和速度。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 的用户管理面板有哪些功能？</h5></div>
-    <div class="panel-body">
-        Hiddify Next 面板可添加或删除用户、设置带宽限制、生成订阅链接、查看流量统计和节点状态。它提供直观的图形界面，无需命令行操作即可管理服务器资源。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
-    <div class="panel-body">
-        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
+        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的加密方式推荐使用哪种？</h5></div>
@@ -328,19 +313,9 @@ A：检查服务器状态、防火墙设置、端口是否正确，及账户权�
         SSR 支持多种加密方式，如 aes-256-cfb、chacha20、rc4-md5 等。建议优先选择 chacha20 系列算法，在移动设备上性能更佳，同时具有较强的安全性。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Sing-box 的策略组支持按延迟选择节点吗？</h5></div>
+    <div class="panel-heading"><h5>Hysteria2 的 QUIC 多路复用在游戏中有什么优势？</h5></div>
     <div class="panel-body">
-        支持。Sing-box 会根据节点延迟自动选择最优节点，结合策略组和路由规则，实现智能分流。延迟最低的节点优先被使用，提高网络访问速度和稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持节点手动排序？</h5></div>
-    <div class="panel-body">
-        支持。用户可以根据延迟或使用需求手动排序节点顺序，结合策略组和规则文件实现基本分流管理。虽然不支持自动订阅更新，但满足轻量用户的节点管理需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>PassWall2 策略组如何自动优化网络访问？</h5></div>
-    <div class="panel-body">
-        PassWall2 结合策略组和延迟检测功能，自动选择最佳节点处理网页、视频和游戏流量。无需手动切换，保证访问速度和稳定性，提升整体网络体验。<hr />    </div>
+        QUIC 多路复用减少握手次数和延迟，适合高频短连接场景，如游戏和即时通讯。它能提高吞吐量和连接稳定性，在高丢包或高延迟环境下保持低延迟网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>WinXray 的系统代理模式有哪些？</h5></div>
@@ -348,9 +323,34 @@ A：检查服务器状态、防火墙设置、端口是否正确，及账户权�
         WinXray 支持三种系统代理模式：全局、直连和 PAC 模式。全局模式代理所有流量；直连模式跳过代理；PAC 模式根据规则文件智能判断是否走代理。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>当 V2Ray 报错 inbound 没有监听，可能是哪些配置问题？</h5></div>
+    <div class="panel-body">
+        检查 inbound 配置是否包含正确的 port、protocol 与 listen 字段；确认没有端口冲突或权限问题（非 root 绑定 1024 以下端口会失败）；查看日志中具体错误信息并根据提示修复配置。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 的用户管理面板有哪些功能？</h5></div>
+    <div class="panel-body">
+        Hiddify Next 面板可添加或删除用户、设置带宽限制、生成订阅链接、查看流量统计和节点状态。它提供直观的图形界面，无需命令行操作即可管理服务器资源。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Shadowrocket 的自动切换功能如何配置？</h5></div>
+    <div class="panel-body">
+        Shadowrocket 支持根据策略组和节点延迟自动切换最优节点。用户可设置测速频率和延迟阈值，程序会定期测试节点并自动切换，以保证网络稳定性和速度。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>PassWall2 策略组如何自动优化网络访问？</h5></div>
+    <div class="panel-body">
+        PassWall2 结合策略组和延迟检测功能，自动选择最佳节点处理网页、视频和游戏流量。无需手动切换，保证访问速度和稳定性，提升整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>Trojan 的证书配置需要注意哪些事项？</h5></div>
     <div class="panel-body">
-        TLS 证书必须有效且域名匹配，否则客户端无法建立连接。推荐使用受信任证书，并确保证书链完整，以保证节点安全和长期可用性，同时提升伪装效果。    </div>
+        TLS 证书必须有效且域名匹配，否则客户端无法建立连接。推荐使用受信任证书，并确保证书链完整，以保证节点安全和长期可用性，同时提升伪装效果。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否支持节点手动排序？</h5></div>
+    <div class="panel-body">
+        支持。用户可以根据延迟或使用需求手动排序节点顺序，结合策略组和规则文件实现基本分流管理。虽然不支持自动订阅更新，但满足轻量用户的节点管理需求。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -398,16 +398,16 @@ A：检查服务器状态、防火墙设置、端口是否正确，及账户权�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-7-24-clash-node.htm" title="推荐V2ray | 7月24日18.1M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 7月24日18.1M/S|免费SSR节点/Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/news/article-274334.htm" title="解决 v2ray 测试失败 IO 的全面指南">解决 v2ray 测试失败 IO 的全面指南</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-8-9.htm" title="推荐V2ray | 8月9日18M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月9日18M/S|免费V2ray节点/SSR节点/Clash节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-8-clash-verge-rev-github.htm" title="推荐V2ray | 8月8日18M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月8日18M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/node-share-2026-8-13.htm" title="推荐V2ray | 8月13日22M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月13日22M/S|免费Shadowrocket节点/Clash节点/Trojan节点/SSR节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-18-clash-verge-rev-github.htm" title="推荐V2ray | 8月18日21.8M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月18日21.8M/S|免费Singbox节点/Trojan节点/V2ray节点/Clash节点/SSR节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-node-github-2026-8-7.htm" title="推荐V2ray | 8月7日21.3M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月7日21.3M/S|免费Clash节点/V2ray节点/SSR节点/Singbox节点/Trojan节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-4-clash-verge-rev-github.htm" title="推荐V2ray | 9月4日18.6M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 9月4日18.6M/S|免费V2ray节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/node-share-2026-8-25.htm" title="推荐V2ray | 8月25日18.3M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月25日18.3M/S|免费Trojan节点/V2ray节点/Singbox节点/Shadowrocket节点/SSR节点/Clash节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
                         <li class="py-2"><a href="/free-nodes/2026-8-10-clash-stash-node.htm" title="推荐V2ray | 8月10日19M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月10日19M/S|免费SSR节点/V2ray节点/Singbox节点/Clash节点/Trojan节点/Shadowrocket节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-meta-github-2026-7-31.htm" title="推荐V2ray | 7月31日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 7月31日20.5M/S|免费Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-8-17.htm" title="推荐V2ray | 8月17日22.2M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月17日22.2M/S|免费Clash节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点/V2ray节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-clash-stash-node.htm" title="推荐V2ray | 8月22日19.4M/S|免费Singbox节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月22日19.4M/S|免费Singbox节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-6-clash-node.htm" title="推荐V2ray | 8月6日18.9M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点/V2ray节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月6日18.9M/S|免费Shadowrocket节点/Clash节点/SSR节点/Trojan节点/Singbox节点/V2ray节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-clash-verge-rev-github.htm" title="推荐V2ray | 8月24日21.5M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月24日21.5M/S|免费V2ray节点/SSR节点/Trojan节点/Shadowrocket节点/Clash节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-v2ray-ss-ssr-2026-9-1.htm" title="推荐V2ray | 9月1日18.6M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 9月1日18.6M/S|免费Singbox节点/SSR节点/Clash节点/Shadowrocket节点/V2ray节点/Trojan节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-meta-github-2026-8-23.htm" title="推荐V2ray | 8月23日21.9M/S|免费Clash节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月23日21.9M/S|免费Clash节点/V2ray节点/Trojan节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-8-clash-verge-rev-github.htm" title="推荐V2ray | 8月8日18M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月8日18M/S|免费SSR节点/Singbox节点/V2ray节点/Trojan节点/Shadowrocket节点/Clash节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-stash-2026-8-27.htm" title="推荐V2ray | 8月27日19M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐">推荐V2ray | 8月27日19M/S|免费SSR节点/Trojan节点/Clash节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，V2ray梯子购买推荐</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -419,10 +419,10 @@ A：检查服务器状态、防火墙设置、端口是否正确，及账户权�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">18</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+                <h4><span class="badge" style="float: right;">4</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">13</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+                <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
             </li>
                     </ul>
     </div>
